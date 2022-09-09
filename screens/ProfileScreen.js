@@ -185,14 +185,18 @@ const ProfileScreen = () => {
                     />
                 </View>
                 <View style={styles.favoriteContainer}>
-                    <View style={styles.iconView}>
-                        <Icon style={styles.iconStyle} name='tv-outline' type='ionicon' size={30} color='#ff6f00' />
-                        <Text style={styles.text}>Séries Vus</Text>
-                    </View>
-                    <View style={styles.iconView}>
-                        <Icon style={styles.iconStyle} name='film-outline' type='ionicon' size={30} color='#ff6f00' />
-                        <Text style={styles.text}>Films Vus</Text>
-                    </View>
+                    <Pressable onPress={() => navigation.navigate('ViewSeries')}>
+                        <View style={styles.iconView}>
+                            <Icon style={styles.iconStyle} name='tv-outline' type='ionicon' size={30} color='#ff6f00' />
+                            <Text style={styles.text}>Séries Vus</Text>
+                        </View>
+                    </Pressable>
+                    <Pressable onPress={() => navigation.navigate('ViewMovies')}>
+                        <View style={styles.iconView}>
+                            <Icon style={styles.iconStyle} name='film-outline' type='ionicon' size={30} color='#ff6f00' />
+                            <Text style={styles.text}>Films Vus</Text>
+                        </View>
+                    </Pressable>
                 </View>
             </ScrollView>
         </View>

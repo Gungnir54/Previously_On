@@ -34,7 +34,6 @@ const SerieDetails = (props) => {
         }
         getSdetails()
     }, [])
-
     return (
         <ScrollView style={styles.container}>
             <Header />
@@ -54,18 +53,8 @@ const SerieDetails = (props) => {
                     <Text style={styles.text}>Crée en : {infoseries.creation}</Text>
                     <Text style={styles.text}>Nombre de saisons :{infoseries.seasons}</Text>
                     <Text style={styles.text}>Nombre d'épisodes : {infoseries.episodes}</Text>
-                    {/* {
-                        infoseries.notes.mean != '' ?
-                            <Text style={styles.note}>Note Moyenne : {infoseries.notes.mean}/5</Text>
-                            :
-                            <></>
-                    }
-                    {
-                        infoseries.notes.total != '' ?
-                        <Text style={styles.text}>{infoseries.notes.total} Avis</Text>
-                        :
-                        <></>
-                    } */}
+                    {/* <Text style={styles.note}>Note Moyenne : {infoseries.notes.mean}/5</Text>
+                    <Text style={styles.note}>{infoseries.notes.total} Avis</Text> */}
 
                     {
                         infoseries.genres != null && (

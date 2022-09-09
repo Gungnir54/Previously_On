@@ -54,9 +54,9 @@ const Card = (props) => {
                                 {/* <Text style={styles.genreStyle}>Note moyenne: {item.rating}</Text>
                                 <Text style={styles.genreStyle}>Synopsis: {item.description}</Text> */}
                             <View style={styles.addContainer}>
-                                <TouchableOpacity style={styles.addBtn} onPress={() => addSerie(item.id)}>
-                                    <Icon style={styles.add} name='add-circle-outline' type='ionicon' size={25} reverse color={"#ff6f00"} />
-                                </TouchableOpacity>
+                                    <TouchableOpacity style={styles.addBtn} onPress={() => addSerie(item.id)}>
+                                        <Icon style={styles.add} name='add-circle-outline' type='ionicon' size={25} reverse color={"#ff6f00"} />
+                                    </TouchableOpacity>
                             </View>
                             </View>
                         </View>
